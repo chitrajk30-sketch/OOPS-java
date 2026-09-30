@@ -1,0 +1,45 @@
+import java.util.scanner;
+public class Bill
+{ 
+ String cname;
+ int cnumber; 
+ int pr;
+ int cr;
+ String type; 
+ double calculateBill()
+{
+ int unit=cr - pr;
+ if(type.equalsIgnoreCase("domestic"))
+  {
+    if(unit>=0&&unit<100)
+      amount=0;
+    else if(unit<=200) 
+      amount=(unit-100)*2;
+    else if(unit<=500)
+      amount=(100*0)+(100*2)+(unit-200)*4;
+    else  
+      amount=(100*0)+(100*2)+(300*4)+(unit-500)*6;
+  }
+}
+class BillDemo 
+{
+ public static void main(string[]args)
+  { 
+    b.calcBill()
+    {
+      return calcBill();
+    }
+    Bill b=new Bill();
+    Scanner s = new Scanner(System.in);
+    System.out.println("Enter customer name:");
+    b.cname=s.next;
+    System.out.println("Enter customer number:");
+    b.cnumber=s.nextInt();
+    System.out.println("Enter previous meter readings:");
+    b.pr=s.nextInt();
+    System.out.println("Enter current meter readings:");
+    b.cr=s.nextInt();
+    System.out.println("Enter type:");
+    b.type=s.next();
+   }
+}
